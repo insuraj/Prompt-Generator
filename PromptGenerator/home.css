@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: gray;
+    background: #121212;
     color: #e0e0e0;
 }
 
@@ -11,7 +11,7 @@ header {
     padding: 1rem 0;
 }
 
-nav {
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;

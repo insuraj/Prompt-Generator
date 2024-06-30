@@ -7,14 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chat-container">
-        <header class="chat-header">
-            <h1>PromptGenerator</h1>
-        </header>
-        <div class="chat-messages" id="messages"></div>
-        <div class="chat-input-container">
-            <input type="text" id="message-input" placeholder="Type your message here...">
-            <button id="send-button" onclick="sendMessage()">Send</button>
+    <div class="container">
+        <div class="sidebar">
+            <h2>How to Use</h2>
+            <p>1. Enter the statement you want your prompt to be based on in the input box.</p>
+            <p>2. Click "Send" or press "Enter" to submit.</p>
+            <p>3. Based on your input the AI will generate:</p>
+            <ul type="circle">
+                <li>Revised Prompt: A clear, concise version of your input.</li>
+                <li>Suggestions: Details to include to improve the prompt.</li>
+                <li>Questions: Relevant questions for additional information needed.</li>
+            </ul>
+            <p>4. If you are not satisfied with the output you can improve your prompt further by giving addtional information from the Suggestions and Questions</p>
+            <p>5. Once you are satisfied with the Generated Prompt You are good to go.</p>
+            <h2>Where to Paste</h2>
+            <p>Once the prompt is generated, you can use it in your respective AI applications to achieve the desired outcomes.</p>
+        </div>
+        <div class="chat-container">
+            <header class="chat-header">
+                <h1>PromptGenerator</h1>
+            </header>
+            <div class="chat-messages" id="messages"></div>
+            <div class="chat-input-container">
+                <input type="text" id="message-input" placeholder="Type your message here...">
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
